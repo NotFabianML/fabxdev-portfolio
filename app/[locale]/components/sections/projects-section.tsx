@@ -20,60 +20,15 @@ import ToolboxImg from "@/assets/toolbox.png";
 import SpotifyWrappedImg from "@/assets/spotifywrapped.png";
 import ChronogameImg from "@/assets/chronogame.png";
 import UnvstImg from "@/assets/unvstplanner.png";
+import FrontecImg from "@/assets/frontec.png";
+import DozenImg from "@/assets/dozen.png";
+import AniQuoteImg from "@/assets/aniquote.png";
 
 export default function ProjectsSection() {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const projects = [
-    // {
-    //   title: "E-Commerce Platform",
-    //   description: "A full-featured e-commerce platform with product management, cart functionality, and secure checkout.",
-    //   image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg",
-    //   technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    //   liveUrl: "#",
-    //   githubUrl: "#",
-    // },
-    // {
-    //   title: "Task Management App",
-    //   description: "A collaborative task management application with real-time updates and team collaboration features.",
-    //   image: "https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg",
-    //   technologies: ["React", "Firebase", "Tailwind CSS", "Redux"],
-    //   liveUrl: "#",
-    //   githubUrl: "#",
-    // },
-    // {
-    //   title: "Fitness Tracker",
-    //   description: "A mobile app for tracking workouts, nutrition, and fitness progress with data visualization.",
-    //   image: "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg",
-    //   technologies: ["React Native", "TypeScript", "GraphQL", "AWS"],
-    //   liveUrl: "#",
-    //   githubUrl: "#",
-    // },
-    // {
-    //   title: "News Aggregator",
-    //   description: "A personalized news aggregator that curates articles based on user preferences and reading habits.",
-    //   image: "https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg",
-    //   technologies: ["Next.js", "NLP API", "Tailwind CSS", "Vercel"],
-    //   liveUrl: "#",
-    //   githubUrl: "#",
-    // },
-    // {
-    //   title: "LitLink",
-    //   description: "A tinder for books, where users can swipe through book recommendations and connect with others who share similar reading interests.",
-    //   image: "https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg",
-    //   technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    //   liveUrl: "#",
-    //   githubUrl: "#",
-    // },
-    // {
-    //   title: "Chat Application",
-    //   description: "A real-time chat application with user authentication and group chat features.",
-    //   image: "https://images.pexels.com/photos/3184402/pexels-photo-3184402.jpeg",
-    //   technologies: ["React", "Socket.io", "Node.js", "Express"],
-    //   liveUrl: "#",
-    //   githubUrl: "#",
-    // },
     {
       title: "LitLink",
       description:
@@ -86,15 +41,38 @@ export default function ProjectsSection() {
         />
       ),
       technologies: [
+        "Ruby on Rails",
         "Vue",
         "Nuxt",
         "TypeScript",
-        "MongoDB",
-        "Ruby on Rails",
-        "Tailwind CSS",
+        "TailwindCSS",
+        "Node.js",
+        "AWS DynamoDB",
       ],
       liveUrl: "https://litlink-cr.vercel.app/",
       githubUrl: "https://github.com/NotFabianML/LitLink",
+    },
+    {
+      title: "Dozen",
+      description:
+        "A versatile document-generation platform for creating invoices, proposals, and more, empowering users to produce professional-quality documents.",
+      image: (
+        <img
+          src={DozenImg.src}
+          alt="Dozen"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      ),
+      technologies: [
+        "React",
+        "Django",
+        "TailwindCSS v4",
+        "Bun",
+        "TypeScript",
+        "Supabase"
+      ],
+      liveUrl: "https://dozen-cr.vercel.app/",
+      githubUrl: "https://github.com/NotFabianML/Dozen"
     },
     {
       title: "Toolbox",
@@ -110,6 +88,27 @@ export default function ProjectsSection() {
       technologies: ["React", "TypeScript", "Tailwind CSS"],
       liveUrl: "https://toolbox-web-xi.vercel.app/",
       githubUrl: "https://github.com/NotFabianML/toolbox-web",
+    },
+    {
+      title: "AniQuote",
+      description:
+        "A sleek app that delivers random anime quotes via a public API, offering fans fresh inspiration and nostalgia with every visit.",
+      image: (
+        <img
+          src={AniQuoteImg.src}
+          alt="AniQuote"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      ),
+      technologies: [
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Node.js",
+        "API"
+      ],
+      liveUrl: "https://ani-quote.vercel.app/",
+      githubUrl: "https://github.com/NotFabianML/AniQuote"
     },
     {
       title: "SpotifyWrapped Web",
@@ -142,6 +141,27 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/NotFabianML/Chrono-Game",
     },
     {
+      title: "Frontec",
+      description:
+        "A custom-built website for a client specialized in home automation, networking, and IoT solutions, featuring immersive 3D visuals and seamless user interactions.",
+      image: (
+        <img
+          src={FrontecImg.src}
+          alt="Frontec"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      ),
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Node.js",
+        "Three.js"
+      ],
+      liveUrl: "https://www.frontec-cr.com/",
+      githubUrl: "https://github.com/NotFabianML/frontec-web"
+    },
+    {
       title: "UnvstPlanner",
       description:
         "A university study planner where students can upload courses, credits, and requirements to organize their semester schedules.",
@@ -152,7 +172,7 @@ export default function ProjectsSection() {
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
       ),
-      technologies: ["React", "TypeScript", "Tailwind CSS"],
+      technologies: ["React", "TypeScript", "TailwindCSS", "Node.js"],
       liveUrl: "https://unvst-planner.vercel.app/",
       githubUrl: "https://github.com/NotFabianML/unvst-planner",
     },
