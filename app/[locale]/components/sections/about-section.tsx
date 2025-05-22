@@ -11,20 +11,25 @@ export default function AboutSection() {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const skills = [
+    { name: "Ruby/RoR", level: 87 },
+    { name: "React", level: 95 },
+    { name: "Vue", level: 80 },
     { name: "Typescript", level: 95 },
+    { name: "Python", level: 97 },
+    { name: "AWS", level: 84 },
     // { name: "JavaScript", level: 90 },
-    { name: "CSS/TailwindCSS", level: 85 },
-    { name: "React", level: 92 },
-    { name: "Next", level: 92 },
-    { name: "Node.js", level: 87 },
-    { name: "SQL", level: 80 },
-    { name: "NoSQL", level: 76 },
+    { name: "CSS/TailwindCSS", level: 75 },
+    // { name: "Next", level: 92 },
+    // { name: "Node.js", level: 87 },
+    { name: "SQL/NoSQL", level: 78 },
+    // { name: "SQL", level: 80 },
+    // { name: "NoSQL", level: 76 },
   ];
 
   const stats = [
-    { value: "2+", label: "Years Experience", icon: <Shield className="h-10 w-10 text-primary" /> },
+    { value: "1+", label: "Years Experience", icon: <Shield className="h-10 w-10 text-primary" /> },
     { value: "10+", label: "Projects Completed", icon: <Code2 className="h-10 w-10 text-primary" /> },
-    { value: "10+", label: "Happy Clients", icon: <Zap className="h-10 w-10 text-primary" /> },
+    { value: "5+", label: "Happy Clients", icon: <Zap className="h-10 w-10 text-primary" /> },
     { value: "7+", label: "Tech Stacks", icon: <Cpu className="h-10 w-10 text-primary" /> },
   ];
 
@@ -47,7 +52,7 @@ export default function AboutSection() {
             </h3>
 
             <p className="text-muted-foreground">
-              I specialize in building modern web applications using cutting-edge technologies. With over 2 years of experience in the industry, I've developed a keen eye for detail and a commitment to writing clean, efficient, and maintainable code.
+              I specialize in building modern web applications using cutting-edge technologies. With over 1 years of experience in the industry, I've developed a keen eye for detail and a commitment to writing clean, efficient, and maintainable code.
             </p>
 
             <p className="text-muted-foreground">
