@@ -138,7 +138,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Botones de descarga de cotización web */}
-        <div className="flex justify-center gap-4 mb-12">
+        {/* <div className="flex justify-center gap-4 mb-12">
           <Button size="lg" asChild>
             <a href="/docs/CW_FabianMiranda_en.pdf" download className="flex items-center">
               Download Quote (EN)
@@ -149,7 +149,7 @@ export default function ServicesSection() {
               Descargar Cotización (ES)
             </a>
           </Button>
-        </div>
+        </div> */}
 
         <Tabs defaultValue="web" className="w-full">
           <div className="flex justify-center mb-8 ">
