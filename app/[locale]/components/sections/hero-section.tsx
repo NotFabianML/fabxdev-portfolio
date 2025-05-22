@@ -55,17 +55,17 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               {/* Botones para descargar CV */}
               <Button size="lg" asChild>
-                <a href="/docs/CV_FabianMiranda_en.pdf" download>
+                <a href="/docs/CV_FabianMiranda.pdf" download>
                   Download CV (EN)
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
-              <Button size="lg" variant="outline" asChild>
+              {/* <Button size="lg" variant="outline" asChild>
                 <a href="/docs/CV_FabianMiranda_es.pdf" download>
                   Descargar CV (ES)
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
-              </Button>
+              </Button> */}
 
 
               {/* Botón de Contact Me */}
@@ -77,7 +77,7 @@ export default function HeroSection() {
             <div className="flex items-center gap-4 pt-6">
               <div className="flex items-center gap-2">
                 <CircleUser className="h-5 w-5 text-primary" />
-                <span className="text-sm">2+ Years Experience</span>
+                <span className="text-sm">1+ Years Experience</span>
               </div>
               <div className="flex items-center gap-2">
                 <GraduationCap className="h-5 w-5 text-primary" />
